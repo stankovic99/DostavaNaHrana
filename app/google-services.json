@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1005601320465",
+    "firebase_url": "https://dostavanahrana-default-rtdb.firebaseio.com",
+    "project_id": "dostavanahrana",
+    "storage_bucket": "dostavanahrana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005601320465:android:126d6e99e387ccf5ce0bb0",
+        "android_client_info": {
+          "package_name": "com.example.dostavanahrana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005601320465-69r6evinf88qcqq73va5c7b6t2fkik09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBanWaSXKdTty7CTwAkLNXXhZRPjft_X40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005601320465-69r6evinf88qcqq73va5c7b6t2fkik09.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1005601320465-7almvnhaf5hq4nn0bek2gtva8nph520g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.stefan.DostavaNaHrana"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

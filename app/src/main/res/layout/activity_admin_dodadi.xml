@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDodadiActivity"
+    android:background="@drawable/logreg_background">
+
+    <RelativeLayout
+        android:id="@+id/tipProizvodAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/tipProizvodLevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Тип на производ:"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/cities"
+            android:prompt="@string/izbor"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tipProizvodLevo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/spinner_input"
+            android:spinnerMode="dialog" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/imeProizvodAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tipProizvodAdmin"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/imeProizvodLevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Име на производ:"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/imeProizvodDesno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/imeProizvodLevo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_rounded"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/cenaProizvodAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imeProizvodAdmin"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/cenaProizvodLevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Цена на производ:"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/cenaProizvodDesno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/cenaProizvodLevo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_rounded"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/dodadiProizvod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cenaProizvodAdmin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:background="@color/plava"
+        android:text="Додади производ"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
